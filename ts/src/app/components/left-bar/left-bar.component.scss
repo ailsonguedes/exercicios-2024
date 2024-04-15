@@ -1,0 +1,64 @@
+.left-bar__container{
+  width: 15%;
+  height: 100%;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-bar__title{
+  background: linear-gradient(to bottom, #fa9a4c, #b96723);
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-bar__logo{
+  height: 220px;
+}
+
+.left-bar__container {
+  width: 15%;
+  height: 100%;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-bar__menu {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.left-bar__menu li {
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 20px;
+  position: relative;
+}
+
+.left-bar__menu li.left-bar-mark__menu {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left-bar__menu li.left-bar-mark__menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #fa9a4c, #b96723);
+}
+
+.left-bar__menu li.left-bar-mark__menu::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
