@@ -1,0 +1,62 @@
+.resume-info__container {
+  border: 1px solid rgba(128, 128, 128, 0.53);
+  width: 100%;
+  min-height: 50px; /* Altura mínima para acomodar o cabeçalho */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassa a altura máxima */
+  transition: min-height 0.5s ease; /* Adiciona uma transição suave para a expansão */
+}
+
+.resume-info__container.expanded {
+  min-height: auto; /* Permite altura dinâmica para acomodar o texto expandido */
+}
+
+.resume-info__top {
+  background-color: rgb(244, 221, 221);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.resume-info__top h3 {
+  color: rgb(77, 76, 76);
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.resume-info__bottom {
+  margin: 15px;
+  font-size: 14px;
+  padding: 5px;
+  color: rgb(77, 76, 76);
+}
+
+.limited-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.btn-show-more {
+  color: orangered;
+  background-color: #ffff;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-show-less {
+  color: orangered;
+  background-color: #ffff;
+  display: block;
+  cursor: pointer;
+}
+
+
+.expanded .btn-show-more {
+  display: none;
+}
+
+.expanded .limited-lines {
+  -webkit-line-clamp: unset;
+}

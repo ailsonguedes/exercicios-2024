@@ -1,8 +1,10 @@
 .left-bar__container{
-  width: 100%;
+  width: 15%;
   height: 100%;
-  position: relative;
-  z-index: 900 ;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 900;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -10,12 +12,14 @@
   background: linear-gradient(to bottom, #fa9a4c, #b96723);
   color: white;
   height: 90px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .left-bar__logo{
+  align-items: center;
   height: 200px;
 }
 
@@ -28,6 +32,7 @@
 .left-bar__menu li {
   border-bottom: 1px solid #ddd;
   height: 50px;
+  width: 205px;
   line-height: 50px;
   font-size: 16px;
   text-align: left;

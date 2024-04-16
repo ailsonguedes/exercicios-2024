@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { LeftBarComponent } from './components/left-bar/left-bar.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { BigInfoComponent } from './components/big-info/big-info.component';
+import { ResumeInfoComponent } from './components/resume-info/resume-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LeftBarComponent,
     TopBarComponent,
-    BigInfoComponent
+    BigInfoComponent,
+    ResumeInfoComponent
   ],
   imports: [
     BrowserModule
