@@ -48,13 +48,17 @@
 .btn-show-less {
   color: orangered;
   background-color: #ffff;
-  display: block;
+  display: none;
   cursor: pointer;
 }
 
 
 .expanded .btn-show-more {
   display: none;
+}
+
+.expanded .btn-show-less {
+  display: block;
 }
 
 .expanded .limited-lines {

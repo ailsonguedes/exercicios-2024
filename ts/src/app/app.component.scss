@@ -1,7 +1,6 @@
 .app-container {
   position: relative;
-  height: 150vh;
-
+  height: 250vh;
 }
 
 .left-bar__content {
@@ -27,12 +26,13 @@
   margin-top: 95px;
 }
 
-.resume-info__content {
+.infos__content {
   position: absolute;
-  top: 68%;
+  top: 40%;
   left: 17%;
   width: 80%;
   height: 25%;
   bottom: 50px;
   margin-bottom: 50px;
 }
+

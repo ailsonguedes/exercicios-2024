@@ -6,6 +6,7 @@ import { LeftBarComponent } from './components/left-bar/left-bar.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { BigInfoComponent } from './components/big-info/big-info.component';
 import { ResumeInfoComponent } from './components/resume-info/resume-info.component';
+import { DiscussionsTopicComponent } from './components/discussions-topic/discussions-topic.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ResumeInfoComponent } from './components/resume-info/resume-info.compon
     LeftBarComponent,
     TopBarComponent,
     BigInfoComponent,
-    ResumeInfoComponent
+    ResumeInfoComponent,
+    DiscussionsTopicComponent
   ],
   imports: [
     BrowserModule
