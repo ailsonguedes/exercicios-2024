@@ -1,4 +1,4 @@
-<div class="discussions-topic__container">
+<div class="discussions-topic__container" [class.expanded]="isExpanded" #topicContainer>
   <div class="discussions-topic__top">
     <h3>Discussões</h3>
   </div>
@@ -13,7 +13,7 @@
     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor! </p>
   </div>
 
-  <div class="answered-topic" *ngIf="showCreateForm">
+  <div class="answered-topic" *ngIf="showCreateForm && !showCreateSecondForm">
     <p> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores</p>
 
     <h4>Assunto</h4>
@@ -28,6 +28,24 @@
       <button class="btn-send-topic"(click)="submitTopic()">Enviar</button>
     </div>
   </div>
+
+  <div class="sended-topic__container" *ngIf="showCreateSecondForm">
+    <h3>Seu tópico foi enviado com sucesso! :D</h3>
+    <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+    <a href="">Descubra outros trabalhos!</a>
+
+    <div class="btn-create-new-topic__container">
+      <button class="btn-create-new-topic">Criar novo topico</button>
+      <hr class="btn-divider">
+    </div>
+
+    <div class="expanded-topic">
+      <img src="assets/confere.svg" alt="">
+      <p>Aguardando feedback dos autores</p>
+      <a href="">Editar tópico</a>
+    </div>
+  </div>
+
 
 </div>
 

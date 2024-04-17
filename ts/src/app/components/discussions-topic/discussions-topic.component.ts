@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { ResumeInfoService } from '../../services/resumeinfo.service';
 
 @Component({
@@ -7,19 +7,22 @@ import { ResumeInfoService } from '../../services/resumeinfo.service';
   styleUrls: ['./discussions-topic.component.scss']
 })
 export class DiscussionsTopicComponent implements OnInit {
-  expanded = false;
+  expanded: boolean = false;
   showCreateForm: boolean = false;
+  showCreateSecondForm: boolean = false;
+  isExpanded: boolean = false;
 
   constructor(
     private resumeInfoService: ResumeInfoService,
     private elementRef: ElementRef,
     private renderer: Renderer2
-  ) { }
+  ) {
+
+   }
 
   ngOnInit(): void {
     this.resumeInfoService.expanded$.subscribe(expanded => {
       this.expanded = expanded;
-      console.log('Expanded:', this.expanded);
       this.adjustPosition();
     });
   }
@@ -34,8 +37,13 @@ export class DiscussionsTopicComponent implements OnInit {
     this.showCreateForm = !this.showCreateForm;
   }
 
+  @ViewChild('topicContainer') topicContainer!: ElementRef;
+
   submitTopic() {
-    // Aqui você pode adicionar a lógica para lidar com o envio do tópico
-    alert('Tópico enviado!');
+    this.showCreateSecondForm = !this.showCreateSecondForm;
+    this.isExpanded = true;
   }
+
+
+
 }
