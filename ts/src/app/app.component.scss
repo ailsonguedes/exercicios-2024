@@ -1,6 +1,7 @@
 .app-container {
   position: relative;
   height: 250vh;
+  width: 89.2%;
 }
 
 .left-bar__content {
@@ -13,14 +14,14 @@
 
 .top-bar__content {
   margin-left: 15%;
-  width: auto;
+  width: 97%;
   height: 14.5vh;
 }
 
 .big-info__content {
   position: absolute;
   top: 0.5%;
-  left: 17%;
+  left: 19%;
   width: 65%;
   height: 80%;
   margin-top: 95px;
@@ -28,9 +29,9 @@
 
 .infos__content {
   position: absolute;
-  top: 40%;
-  left: 17%;
-  width: 80%;
+  top: 42%;
+  left: 19%;
+  width: 85%;
   height: 25%;
   bottom: 50px;
   margin-bottom: 50px;
@@ -38,16 +39,16 @@
 
 .download-section__content{
   position: absolute;
-  top: 6.5%;
-  left: 77%;
+  top: 7.5%;
+  left: 84%;
   width: 20%;
   height: 3%;
 }
 
 .detalhes-section__content{
   position: absolute;
-  top: 10.6%;
-  left: 79%;
+  top: 12.4%;
+  left: 86%;
   width: 18%;
   height: 28.5%;
 }
