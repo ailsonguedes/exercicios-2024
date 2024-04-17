@@ -5,6 +5,7 @@
 
 .detalhes-info__title{
   background-color: rgb(244, 221, 221);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.393);
   width: 100%;
   height: 40px;
   display: flex;
@@ -18,9 +19,12 @@
 }
 
 .detalhes-info__tipo {
+  max-height: 380px;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   margin: 15px;
+  margin-right: -0px;
 }
 
 .detalhes-info__tipo p {
@@ -33,4 +37,26 @@
 .detalhes-info__tipo p span {
   font-weight: bold;
   color: rgb(134, 134, 134);
+}
+
+.detalhes-info__tipo h4 {
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  margin-top: 14px;
+  margin-bottom: 2px;
+}
+
+.detalhes-info__tipo ul{
+  color: rgb(134, 134, 134);
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.detalhes-universidade{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.detalhes-universidade > ul{
+  font-size: 10px;
 }
