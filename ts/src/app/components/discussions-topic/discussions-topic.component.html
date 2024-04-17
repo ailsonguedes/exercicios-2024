@@ -3,7 +3,7 @@
     <h3>Discussões</h3>
   </div>
 
-  <div class="discussions-topic__bottom">
+  <div class="discussions-topic__bottom" *ngIf="!showCreateForm">
     <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
 
     <div class="img">
@@ -13,9 +13,25 @@
     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor! </p>
   </div>
 
+  <div class="answered-topic" *ngIf="showCreateForm">
+    <p> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores</p>
+
+    <h4>Assunto</h4>
+    <input class="ops-topic-subject" type="text" placeholder="Digite seu nome">
+
+    <h4>Conteúdo</h4>
+    <div class="comments-container">
+      <textarea placeholder="Digite seu tópico"></textarea>
+    </div>
+
+    <div class="btn-send-topic__container">
+      <button class="btn-send-topic"(click)="submitTopic()">Enviar</button>
+    </div>
+  </div>
+
 </div>
 
-<button class="btn-create-topic">+ Criar Topico</button>
+<button class="btn-create-topic" (click)="toggleCreateForm()" *ngIf="!showCreateForm">+ Criar Topico</button>
 
 
 

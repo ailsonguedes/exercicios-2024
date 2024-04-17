@@ -7,6 +7,9 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { BigInfoComponent } from './components/big-info/big-info.component';
 import { ResumeInfoComponent } from './components/resume-info/resume-info.component';
 import { DiscussionsTopicComponent } from './components/discussions-topic/discussions-topic.component';
+import { DownloadSectionComponent } from './components/download-section/download-section.component';
+import { DiscussionsCreateComponent } from './components/discussions-create/discussions-create.component';
+import { DetalhesInfoComponent } from './components/detalhes-info/detalhes-info.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { DiscussionsTopicComponent } from './components/discussions-topic/discus
     TopBarComponent,
     BigInfoComponent,
     ResumeInfoComponent,
-    DiscussionsTopicComponent
+    DiscussionsTopicComponent,
+    DownloadSectionComponent,
+    DiscussionsCreateComponent,
+    DetalhesInfoComponent
   ],
   imports: [
     BrowserModule

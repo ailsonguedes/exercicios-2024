@@ -1,0 +1,36 @@
+.detalhes-info__container{
+  border: 1px solid rgba(128, 128, 128, 0.53);
+  height: 71vh;
+}
+
+.detalhes-info__title{
+  background-color: rgb(244, 221, 221);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.detalhes-info__title > h3{
+  margin-left: 10px;
+  color: rgba(45, 45, 45, 0.707);
+  font-weight: 700;
+}
+
+.detalhes-info__tipo {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.detalhes-info__tipo p {
+  margin: 2px;
+  font-size: 12px;
+  font-weight: 550;
+  color: rgb(158, 158, 158);
+}
+
+.detalhes-info__tipo p span {
+  font-weight: bold;
+  color: rgb(134, 134, 134);
+}

@@ -8,6 +8,7 @@ import { ResumeInfoService } from '../../services/resumeinfo.service';
 })
 export class DiscussionsTopicComponent implements OnInit {
   expanded = false;
+  showCreateForm: boolean = false;
 
   constructor(
     private resumeInfoService: ResumeInfoService,
@@ -27,5 +28,14 @@ export class DiscussionsTopicComponent implements OnInit {
     const discussionsTopicElement = this.elementRef.nativeElement.querySelector('.discussions-topic__container');
     const newMarginTop = this.expanded ? '20px' : '15px';
     this.renderer.setStyle(discussionsTopicElement, 'margin-top', newMarginTop);
+  }
+
+  toggleCreateForm() {
+    this.showCreateForm = !this.showCreateForm;
+  }
+
+  submitTopic() {
+    // Aqui você pode adicionar a lógica para lidar com o envio do tópico
+    alert('Tópico enviado!');
   }
 }
