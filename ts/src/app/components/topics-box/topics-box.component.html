@@ -1,0 +1,90 @@
+<div class="topic-box__container">
+  <div class="info">
+
+    <div class="top">
+      <h3>Assunto da pergunta aparece aqui</h3>
+      <p>Carlos Henrique Santos</p>
+
+      <div class="mid">
+        <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+      </div>
+
+      <div class="bottom">
+        <button class="points"><img src="assets/infos.svg" alt=""></button>
+        <button class="heart"><img src="assets/coracao.svg" alt=""></button>
+        <span class="like">1 like</span>
+        <span class="response">1 resposta</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="topic-box__container" [class.expanded]="expanded" (click)="expandir()">
+  <div class="info">
+
+    <div class="top">
+      <h3>Assunto da pergunta aparece aqui</h3>
+      <p>Carlos Henrique Santos</p>
+
+      <div class="mid">
+        <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+      </div>
+
+      <div class="bottom">
+        <button class="points"><img src="assets/infos.svg" alt=""></button>
+        <button class="heart"><img src="assets/coracao.svg" alt=""></button>
+        <span class="like">4 like</span>
+        <span class="response">4 resposta</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic-box__expand" *ngIf="expanded">
+    <div class="reference-info">
+      <p class="name-reference">Adriano da Silva</p>
+      <div class="autor-img">
+        <p class="autor-reference">Autor</p>
+        <img src="assets/confere-laranja.svg" alt="">
+      </div>
+    </div>
+    <p class="text-reference">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+  </div>
+
+  <div class="topic-box__expand-dif" *ngIf="expanded">
+    <div class="reference-info">
+      <p class="name-reference">Carlos Henrique Santos</p>
+    </div>
+    <p class="text-reference">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. Obrigada pela resposta, muito interessante o seu trabalho!</p>
+  </div>
+
+  <div class="topic-box__expand" *ngIf="expanded">
+    <div class="reference-info">
+      <p class="name-reference">Carmila Ferreira Andrade</p>
+      <div class="autor-img">
+        <p class="autor-reference">Coautor</p>
+        <img src="assets/confere-laranja.svg" alt="">
+      </div>
+    </div>
+    <p class="text-reference">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+  </div>
+
+  <div class="topic-box__expand" *ngIf="expanded">
+    <div class="reference-info">
+      <p class="name-reference">Ana Carolina</p>
+      <div class="autor-img">
+        <p class="autor-reference">Autor</p>
+        <img src="assets/confere-laranja.svg" alt="">
+      </div>
+    </div>
+    <p class="text-reference">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+  </div>
+
+
+
+</div>
+

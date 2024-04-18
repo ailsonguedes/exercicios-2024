@@ -10,6 +10,8 @@ import { DiscussionsTopicComponent } from './components/discussions-topic/discus
 import { DownloadSectionComponent } from './components/download-section/download-section.component';
 import { DiscussionsCreateComponent } from './components/discussions-create/discussions-create.component';
 import { DetalhesInfoComponent } from './components/detalhes-info/detalhes-info.component';
+import { TopicsBoxComponent } from './components/topics-box/topics-box.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DetalhesInfoComponent } from './components/detalhes-info/detalhes-info.
     DiscussionsTopicComponent,
     DownloadSectionComponent,
     DiscussionsCreateComponent,
-    DetalhesInfoComponent
+    DetalhesInfoComponent,
+    TopicsBoxComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
