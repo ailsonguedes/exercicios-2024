@@ -13,21 +13,23 @@
     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor! </p>
   </div>
 
-  <div class="answered-topic" *ngIf="showCreateForm && !showCreateSecondForm">
-    <p> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores</p>
+  <form action="">
+    <div class="answered-topic" id="answered-topic" *ngIf="showCreateForm && !showCreateSecondForm">
+      <p> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores</p>
 
-    <h4>Assunto</h4>
-    <input class="ops-topic-subject" type="text" placeholder="Digite seu nome">
+      <h4>Assunto</h4>
+      <input class="ops-topic-subject" id="ops-topic-subject" type="text" placeholder="Digite seu nome">
 
-    <h4>Conteúdo</h4>
-    <div class="comments-container">
-      <textarea placeholder="Digite seu tópico"></textarea>
+      <h4>Conteúdo</h4>
+      <div class="comments-container">
+        <textarea placeholder="Digite seu tópico"></textarea>
+      </div>
+
+      <div class="btn-send-topic__container">
+        <button class="btn-send-topic"(click)="submitTopic()">Enviar</button>
+      </div>
     </div>
-
-    <div class="btn-send-topic__container">
-      <button class="btn-send-topic"(click)="submitTopic()">Enviar</button>
-    </div>
-  </div>
+  </form>
 
   <div class="sended-topic__container" *ngIf="showCreateSecondForm">
     <h3>Seu tópico foi enviado com sucesso! :D</h3>
@@ -49,7 +51,7 @@
 
 </div>
 
-<button class="btn-create-topic" (click)="toggleCreateForm()" *ngIf="!showCreateForm">+ Criar Topico</button>
+<button class="btn-create-topic" id="btn-create-topic" (click)="toggleCreateForm()" *ngIf="!showCreateForm"><img src="assets/criar.svg" alt="">criar tópico</button>
 
 
 
