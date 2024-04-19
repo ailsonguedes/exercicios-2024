@@ -1,7 +1,7 @@
 .app-container {
   position: relative;
   height: 250vh;
-  width: 89.2%;
+  width: 86.5%;
 }
 
 .left-bar__content {
@@ -31,16 +31,16 @@
   position: absolute;
   top: 42%;
   left: 19%;
-  width: 85%;
-  height: 55%;
-  bottom: 50px;
+  width: 88%;
+  height: 65%;
+  bottom: 5px;
   margin-bottom: 50px;
 }
 
 .download-section__content{
   position: absolute;
   top: 7.5%;
-  left: 84%;
+  left: 87%;
   width: 20%;
   height: 3%;
 }
@@ -48,14 +48,14 @@
 .detalhes-section__content{
   position: absolute;
   top: 12.4%;
-  left: 86%;
+  left: 89%;
   width: 18%;
   height: 28.5%;
 }
 
 .footer__content{
+  display: flex;
   margin-top: 5%;
   width: 100%;
   height: 10%;
-
 }
